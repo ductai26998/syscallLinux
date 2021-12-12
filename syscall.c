@@ -124,23 +124,27 @@ void renameFile(char *oldname, char *newname)
     {
         perror("Error rename");
         // exit(1);
-    } else {
+    }
+    else
+    {
         printf("%s -> %s", oldname, newname);
     }
 }
 
 void menu()
 {
-    printf("\n-----------------------------------------------\n");
-    printf("0. Exit \n");
-    printf("1. Create new file \n");
-    printf("2. Open file \n");
-    printf("3. Read file \n");
-    printf("4. Write content to file \n");
-    printf("5. Copy file \n");
-    printf("6. Rename file \n");
-    printf("7. Delete file \n");
-    printf("\nPlease choose a option: ");
+    printf("\n------------------------------------\n");
+    printf("\tFILE MANAGER");
+    printf("\n------------------------------------\n");
+    printf("\t0. Exit \n");
+    printf("\t1. Create new file \n");
+    printf("\t2. Open file \n");
+    printf("\t3. Read file \n");
+    printf("\t4. Write content to file \n");
+    printf("\t5. Copy file \n");
+    printf("\t6. Rename file \n");
+    printf("\t7. Delete file \n");
+    printf("\nPlease choose an option: ");
 }
 
 int main()
